@@ -1,0 +1,38 @@
+# N used as a place holder for a number
+
+CHROMOSOMES = [1..22]
+
+FAMILY NAMES = [family1 family2 family3]
+
+ADMIXTURE MODEL = Global FBCW FBGW Local | AVERAGE TYPE FOR GLOBAL AND FBGW = weighted
+
+EXTRAPOLATION OF LOCAL ADMIXTURE PROPORTIONS: yes # another value for this option is <no>
+
+GLOBAL ADMIXTURE MODEL PROPORTIONS: population1 = N | population2 = N | population3 = N
+
+COMPUTE GLOBAL ADMIXTURE MODEL PROPORTIONS: yes
+
+ADMIXTURE PROPORTIONS PRINTOUT: yes
+
+GENO FILE FOR GL_AUTO: FILE PATH = /your_directory/+/chr*.geno | DETAILED ALLELE FREQUENCY FILE = yes
+
+INFORMATION FOR GENO FILE: FILE PATH = /your_directory/chr*.tmap | HEADER = F | BP_POSITION = N | CM_POSITION = N | RS_NUMBER = N 
+
+MODIFY YOUR BP ALLELE FREQUENCIES: FILE PATH = /your_directory/chr*.txt | HEADER = T | BP_POSITION = N | RS_NUMBER = N
+
+OUTPUT DIRECTORY = /your_directory
+
+YOUR SAMPLE ALLELE FREQUENCIES: FILE PATH = /your_directory/chr*.frq | HEADER = T | BP_POSITION = N | REF_ALLELE = N | ALT_ALLELE = N | REF_ALLELE_FRQ = N
+
+REFERENCE POPULATION NAME = population1 | FILE PATH = /your_directory/population1/chr*.frq | HEADER = T |BP_POSITION = N | RS_NUMBER = N | REF_ALLELE = N | ALT_ALLELE = N | REF_ALLELE_FRQ = N
+
+REFERENCE POPULATION NAME = population2 | FILE PATH = /your_directory/population2/chr*.frq | HEADER = T |BP_POSITION = N | RS_NUMBER = N | REF_ALLELE = N | ALT_ALLELE = N | REF_ALLELE_FRQ = N
+
+REFERENCE POPULATION NAME = population3 | FILE PATH = /your_directory/population3/chr*.frq | HEADER = T |BP_POSITION = N | RS_NUMBER = N | REF_ALLELE = N | ALT_ALLELE = N | REF_ALLELE_FRQ = N
+
+LOCAL ADMIXTURE PER FAMILY BY POPULATION = population1 | FILE PATH = /your_directory/population1/chr*.txt  | HEADER = T | VARIANT IDENTIFIER = rs_number | VARIANT IDENTIFIER COLUMN = N | FAMILIES = [family1 family2 family3] | COLUMN NUMBERS = [N N N] # another value for the "VARIANT IDENTIFIER" suboption is <bp_position>
+
+LOCAL ADMIXTURE PER FAMILY BY POPULATION = population2 | FILE PATH = /your_directory/population2/chr*.txt  | HEADER = T | VARIANT IDENTIFIER = rs_number | VARIANT IDENTIFIER COLUMN = N | FAMILIES = [family1 family2 family3] | COLUMN NUMBERS = [N N N] # another value for the "VARIANT IDENTIFIER" suboption is <bp_position>
+
+LOCAL ADMIXTURE PER FAMILY BY POPULATION = population3 | FILE PATH = /your_directory/population3/chr*.txt  | HEADER = T | VARIANT IDENTIFIER = rs_number | VARIANT IDENTIFIER COLUMN = N | FAMILIES = [family1 family2 family3] | COLUMN NUMBERS = [N N N] # another value for the "VARIANT IDENTIFIER" suboption is <bp_position>
+
